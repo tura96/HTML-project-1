@@ -238,16 +238,21 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-shadow{
     text-shadow: 0 0 3px #000;
 }
-#bread:hover {
+
+
+#bread{
     position: relative;
 }
+
+
 #bread:hover:after {
-    content: url(http://cdn.tgdd.vn/Files/2021/05/29/1355619/cach-nau-thit-bo-sot-vang-voi-gac-thom-ngon-len-mau-dep-202201040903229684.jpg); /* no need for qoutes */
+    content:  url(http://cdn.tgdd.vn/Files/2021/05/29/1355619/cach-nau-thit-bo-sot-vang-voi-gac-thom-ngon-len-mau-dep-202201040903229684.jpg); /* no need for qoutes */
     display: block;
     position: absolute;
     opacity: 0.8;
-    left: 123px; /* change this value to one that suits you */
+    left: 100px; /* change this value to one that suits you */
     top: 56px;
+    height: 100px;
 }
 
 #map{
