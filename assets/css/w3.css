@@ -240,21 +240,23 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 
-#bread{
-    position: relative;
-}
 
-
-#bread:hover:after {
-    content:  url(http://cdn.tgdd.vn/Files/2021/05/29/1355619/cach-nau-thit-bo-sot-vang-voi-gac-thom-ngon-len-mau-dep-202201040903229684.jpg); /* no need for qoutes */
-    display: block;
+.menu__dish-imgc{
+    width: 250px;
+    height: 250px;
     position: absolute;
-    opacity: 0.8;
-    left: 100px; /* change this value to one that suits you */
-    top: 56px;
-    height: 100px;
+    left: 180px;
+    display: none;
+    z-index: 1;
+    animation: fadeIn ease 0.3s;
 }
-
+.menu__dish:hover .menu__dish-imgc{
+    display: block;
+}
+.menu__dish-img{
+    height:300px;
+    width: 300px;
+}
 #map{
 width:100%;
 height:100%;
@@ -262,4 +264,13 @@ min-height: 500px;
 }
 .map-api{
 min-height:300px;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
